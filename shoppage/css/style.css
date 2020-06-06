@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*===================   Body and Html Settings  ===================*/
+body{
+    font-family:sans-serif;
+    background: rgb(137,72,72);
+    scroll-behavior: smooth;
+}
+  /*===================Home Page ===================*/
+#products{
+  background-color: rgb(138, 72, 72);
+  border: 2px solid black;
+  width: 50%;
+  height: auto;
+  color: white; 
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 5px;
+  margin: 50px auto 0px;
+
+}
+/*==================Home Page===================*/
+#collection{
+    background-color: cornsilk;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 0px;
+}
+/*===================Gallery Page ===================*/
+#legit{
+  background-color: cornsilk;
+  border: 2px solid black;
+  width: 40%;
+  height:auto;
+  height: auto;
+  color: black; 
+  border-radius: 10px 10px 0px 0px;
+  margin: 50px auto 0px;
+  font: 20px;
+  padding: 10px;
+}
+/*===================HTML TAGS ===================*/
+h1{
+  color: white;
+ }
+ h2{
+   text-align: center;
+   color: rgb(138, 72, 72);
+ }
+ h3{
+   color: white;
+ }
+ .header img{
+   float:left;
+   width: 100px;
+   height: 100px;
+   background: #555;
+ }
+/*===================Home Page Navbar ===================*/
+ .menu{
+  width:100%;
+  background: rgb(137,72,72);
+  overflow:auto;
+}
+
+.menu ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  line-height:60px;
+
+}
+
+.menu li{
+  float:left;
+}
+
+.menu ul li a{
+  text-decoration:none;
+  background: rgb(137,72,72);
+  width:130px;
+  display:block;
+  text-align:center;
+  color:white;
+  font-size:18px;
+  font-family:sans-serif;
+  letter-spacing:0.5px;
+}
+
+.menu li a:hover{
+  color: orange;
+  opacity:0,5;
+  font-size: 20px;
+}
+/*=================== Home Page===================*/
+em{
+  color: #dff0d8;
+  margin-bottom: 80px;
+}
+/*=================== Gallery Page Images===================*/
+.gallery{
+  background: rgb(137,72,72);
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px; 
+  opacity: 1;
+  filter: alpha(opacity=100);
+
+}
+
+.gallery:hover{
+-moz-gallery-shadow: 0 0 10px #ccc;
+-webkit-gallery-shadow: 0 0 10px #ccc;
+ box-shadow: 0 0 10px #ccc;
+ opacity: 0.3;
+ filter: alpha(opacity=30)
+}
+/*===================Input Label===================*/
+
+ form, .content {
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid  rgb(138, 72, 72);
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .input {
+    margin: 10px 0px 10px 0px;
+  }
+  .input label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+  }
+  .input input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid  rgb(138, 72, 72);
+  }
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgb(138, 72, 72);
+    border: none;
+    border-radius: 5px;
+  }
+  .error {
+    width: 92%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid rgb(138, 72, 72); 
+    color:  rgb(138, 72, 72);
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+  }
