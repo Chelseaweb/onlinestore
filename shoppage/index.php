@@ -1,227 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Shopping Cart</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel='icon' type="image/x-con" href=" ">
 </head>
-
 <body>
 
+        <nav class="menu">
+         <ul>
+          <li><em>Legit Boss</em></li>
+          <li><a href="shop.php">ShoppingCart</a></li>
+          <li><a href="aboutpage.php">About Page</a></li>
+          <li><a href="gallerypage.php">Gallery Page</a></li>
+          <li><a href="contactpage.php">Contact Page</a></li>
+         </ul>
    
-  <?php 
-    // initialize errors variable
-  $errors = "";
 
-  define("DB_SERVER","localhost");
-  define("DB_USERNAME","root");
-  define("DB_PASSWORD","new_password");
-  define("DB_DATABASE", "onlinestore");
-
-	// connect to database
-  $db = mysqli_connect('localhost', 'root', 'new_password', 'onlinestore');
-    
-?>
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-<!--Product #1 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
- </div>
-
-<div class="image">
- <img src="images/bag1.jpg"
-  alt="bag">
-</div>
-
-<div class="description">
- <span>Brown Bag</span>
-</div>
-  <div class="total-price">R700</div>
-</div>
-
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-
-<!--Product #2 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
- </div>
-
-<div class="image">
- <img src="images/handbag1.jpg" alt="bag">
-</div>
-
-<div class="description">
- <span>Black Swan</span>
-</div>
-  <div class="total-price">R820</div>
-</div>
-
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-
-<!--Product #3 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
- </div>
-
-<div class="image">
- <img src="images/handbag3.jpg" alt="bag">
-</div>
-
-<div class="description">
- <span>Faded Bag</span>
-</div>
-  <div class="total-price">R900</div>
-</div>
-
-
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-
-<!--Product #4 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
- </div>
-
-<div class="image">
- <img src="images/fur1.jpg" alt="bag">
-</div>
-
-<div class="description">
- <span>Boujee Coat</span>
-</div>
-
-  <div class="total-price">R1000</div>
-</div>
-
-
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-
-<!--Product #5 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
- </div>
-
-<div class="image">
- <img src="images/fur4.jpg" alt="bag">
-</div>
-
-<div class="description">
- <span>Polo Coat</span>
-</div>
-  <div class="total-price">R840</div>
-</div>
-
-
-<div class="shopping-cart">
- <!--Title -->
-<div class='title'>
-  Shopping Bag
-</div>
-
-<!--Product #6 -->
-<div class="item">
- <div class="buttons">
-  <span class="delete-btn"></span>
-  <span class="like-btn"></span>
+  <div id="products">
+    <h3>The Upcoming Collection For The Legit Boss Shoplist</h3>
+  </div>
   
- </div>
+  <div id='collection'>
+    <h2>The Fur Coats Collection</h2>
+     <img src="images/fur1.jpg" width="200px" height="150px" alt="fur">
+     <img src="images/fur2.jpg" width="200px" height="150px" alt="fur">
+     <img src="images/fur3.jpg" width="200px" height="150px" alt="fur">
+     <img src="images/fur4.jpg" width="200px" height="150px" alt="fur">
+     <img src="images/fur5.jpg" width="200px" height="150px" alt="fur">
+  </div>
+     
+<div id="collection">
+   <h2>The Leather Bags Collection</h2>
+     <img src="images/handbag1.jpg" width="200px" height="150px" alt="handbag">
+     <img src="images/handbag2.jpg" width="200px" height="150px" alt="handbag">
+     <img src="images/handbag3.jpg" width="200px" height="150px" alt="handbag">
+     <img src="images/handbag4.jpg" width="200px" height="150px" alt="handbag">
+     <img src="images/handbag5.jpg" width="200px" height="150px" alt="handbag">
+     <img src="images/handbag6.jpg" width="200px" height="150px" alt="handbag">
 
-<div class="image">
- <img src="images/fur3.jpg" alt="bag">
 </div>
 
-<div class="description">
- <span>Glam Coat</span>
-</div>
-  <div class="total-price">R2000</div>
-</div>
+ <br>
 
-</body>
+ <nav class="menu">
+ <ul>
+   <li><a  href="index.php">Back To Top</a></li>
+</ul>
+
+     <!--FOOTER-->
+     <footer class="site-footer">
+		<div class="container">
+			<div class="text-center text-white">
+				<p class="copyright-text">Copyright 2020 &copy; CHELSEA</p>
+			</div>
+		</div>
+    </footer><!--End of Footer-->
+	
+  </body>
 </html>
-
-
-
-<script>
-  /*
-    $('.like-btn').on('click',function() {
-     $(this).toggleClass('is-active');
-    });
-
-$('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closet('div').find('input');
-    var value = parseInt($input.val());
-
- if (value &amp;gt;  1) {
-     value = value - 1;
- } else {
-     value = 0;
- }
-
-  $input.val(value);
-
-});
-
-$('plus-btn').on('click', function(e) {
-  e.preventDefault();
-  var $this = $(this);
-  var $input = $this.closet('div').find('input');
-  var value = parseInt($input.val());
-
-  if (value &amp;lt; 100) {
-      value = value + 1;
-  } else {
-      value =100;
-  }
-
- $input.val(value);
-
-});
-<div class="quantity">
- <button class="plus-btn" type="button" name="button">
-  <img src="plus.svg" alt="plus">
- </button>
- <input type="text" name="name" value="1">
- <button class="minus-btn" type="button"  name="button">
-    <img src="minus.svg" alt="minus">
- </button>
-</div>
-
-</script>
-
-
-

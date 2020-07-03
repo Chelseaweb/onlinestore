@@ -24,7 +24,7 @@ $db = mysqli_connect('localhost', 'root', 'new_password', 'onlinestore');
 
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM onlinestore WHERE email='$email' LIMIT 1";
+  $user_check_query = "SELECT * FROM products WHERE email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   

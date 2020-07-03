@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2020 at 11:38 PM
+-- Generation Time: Jul 03, 2020 at 12:32 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.29
 
@@ -28,23 +28,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tblproducts` (
-  `id` int(11) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `price` double(10,2) NOT NULL,
-  `product_image` text NOT NULL
+  `price` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblproducts`
 --
 
-INSERT INTO `tblproducts` (`id`, `name`, `price`, `product_image`) VALUES
-(1, 'Brown Bag', 700.00, 'images/bag1.jpeg'),
-(2, 'Black Swan', 820.00, 'images/handbag1.jpeg'),
-(3, 'Faded Bag', 900.00, 'images/handbag3.jpeg'),
-(4, 'Boujee Coat', 1000.00, 'images/fur1.jpeg'),
-(5, 'Polo Coat', 840.00, 'images/fur4.jpeg'),
-(6, 'Glam Coat', 2000.00, 'images/fur3.jpeg');
+INSERT INTO `tblproducts` (`id`, `name`, `price`, `image`) VALUES
+(1, 'Brown Bag', '700.00', 'bag1.jpg'),
+(2, 'Black Swan', '820.00', 'handbag1.jpg'),
+(3, 'Faded Bag', '900.00', 'handbag3.jpg'),
+(4, 'Boujee Coat', '1000.00', 'fur1.jpg'),
+(5, 'Polo Coat', '840.00', 'fur4.jpg'),
+(6, 'Glam Coat', '2000.00', 'fur3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -55,6 +55,16 @@ INSERT INTO `tblproducts` (`id`, `name`, `price`, `product_image`) VALUES
 --
 ALTER TABLE `tblproducts`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tblproducts`
+--
+ALTER TABLE `tblproducts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -18,12 +18,13 @@ if(isset($_GET['logout'])){
 <html>
 <head>
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <div class="header">
   <h1>Home Page</h1>
+ <?php include ("register.php") ?>
 </div>
 
 <div class="content">

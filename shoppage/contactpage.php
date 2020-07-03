@@ -8,6 +8,7 @@
 </head>
  
 <body>
+
     <h3>Use the google maps above to find the Legit Boss Store on 18 Bree Street.</h3>
 
 <div class="header">
@@ -28,6 +29,7 @@
 </form>
 
 
+
      <!--FOOTER-->
      <footer class="site-footer">
 		<div class="container">
@@ -36,6 +38,15 @@
 			</div>
 		</div>
 	</footer><!--End of Footer-->
+
+<!--enables user to go back to home page-->
+<nav class="menu">
+         <ul>
+          <li><em>Legit Boss</em></li>
+          <li><a href="index.php">Home Page</a></li>
+        </ul>
+
+
 
   <body>
 </html>

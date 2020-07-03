@@ -6,8 +6,19 @@
 </head>
  
 <body>
+
+<nav class="menu">
+         <ul>
+          <li><em>Legit Boss</em></li>
+          <li><a href="index.php">Home Page</a></li>
+        </ul>
+
+
+
+<!--about page-->
+
 <div id="legit">
-     <h2>Welcome To Legit Boss Fashion Exclusive</h2>
+     <h2>Welcome To Legit Boss Fashion Exclusive</h2> 
   
       <p>Legit Boss is a fashion retail shop which sells<br>
        leather handbags and fur coats. We are located<br>
@@ -39,9 +50,12 @@
 
      <br>
 
-     </div>
+  </div>    
 
-     <!--FOOTER-->
+
+
+
+ <!--FOOTER-->
      <footer class="site-footer">
 		<div class="container">
 			<div class="text-center text-white">
@@ -49,6 +63,8 @@
 			</div>
 		</div>
 	</footer><!--End of Footer-->
+
+
 
     </body>
 </html>

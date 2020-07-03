@@ -7,11 +7,11 @@
 </head>
 <body>
 
+<!--gallery page with hover effect-->
+
  <div class="gallery">
-     <img src="images/bag1.jpg" 
-     
-     width="200px" height="150px" alt="bag">
-     <img src="images/bag2.jpg"  width="200px" height="150px" alt="bag">
+ <img src="images/bag1.jpg" width="200px" height="150px" alt="bag">
+     <img src="images/bag2.jpg"  width="200px" height="150px" alt="bag"> 
      <img src="images/bag3.jpg"  width="200px" height="150px" alt="bag">
      <img src="images/bag4.jpg"  width="200px" height="150px" alt="coat">
      <img src="images/bag5.jpg"  width="200px" height="150px" alt="coat">
@@ -29,6 +29,7 @@
 </div>
 
 
+
      <!--FOOTER-->
      <footer class="site-footer">
 		<div class="container">
@@ -37,6 +38,17 @@
 			</div>
 		</div>
     </footer><!--End of Footer-->
- 
+
+    
+
+    <nav class="menu">
+         <ul>
+          <li><em>Legit Boss</em></li>
+          <li><a href="index.php"> Home Page</a></li>
+        </ul>
+
+
+      
+        
     </body>
 </html>
