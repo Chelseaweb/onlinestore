@@ -1,4 +1,4 @@
-<?php include('server.php')?>
+<?php include('config/server.php')?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,8 +43,12 @@
           float:right;
       }
     
-</style>
+    </style>
 </head>
+
+
+
+
 
 <body>
 
@@ -56,7 +60,7 @@
         </ul>
         
 <div id="image">
-<img src="bag.png" width="100%" alt="leather" height="400px">
+<img src="images/bag.jpg" width="100%" alt="leather" height="400px">
  </div>
 
  <div class="p">
@@ -68,7 +72,7 @@
 <br>
 <br>
 <br>
-<img src="shopping-cart.png" width="200px" height="100px" alt="cart">
+<img src="images/shopping-cart.png" width="200px" height="100px" alt="cart">
 
 <?php
 
@@ -109,6 +113,7 @@ while($array = $result -> fetch_assoc())
     <option value="5">5</option>
     <option value="6">6</option>
     </select>
+    <hr>
         <div>
             <img src="<?php echo $image; ?>">
         </div>
@@ -136,18 +141,42 @@ $conn->close();
 ?>
 </div>
 
-</body>
-</html> 
-
-
+  
 
 <div class="subscribe">
+
     <h2>Subscribe</h2>
     <p>To get more special offers and VIP treatment:</p>
- <p>Enter your email address below</p>
- <form method="post" action="shop.php" class="input_form">
-		<input type="text" name="task" class="task_input">
-    <button type="submit" name="submit" id="add_btn" class="add_btn">Subscribe</button>   
+ <p>Enter your email address below</p> 
+
+ <!--formtosubscribe-->
+ <form method="post" action="shop.php"> 
+ <?php include('error.php'); ?> 
+  	<label>Email</label>
+  	  <input type="email" name="email"  value="<?php echo $email; ?>">
+	<button type="submit" name="submit" id="add_btn" class="add_btn">Email</button>   
+    
+ </form>
+
+
+  </body>
+</html>
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <?php
   // connect to database
     $db = mysqli_connect('localhost', 'root', 'new_password', 'onlinestore');
@@ -170,3 +199,5 @@ $conn->close();
 
 </body>
 </html>
+
+

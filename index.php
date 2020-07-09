@@ -16,7 +16,6 @@
           <li><a href="contactpage.php">Contact Page</a></li>
          </ul>
    
-
   <div id="products">
     <h3>The Upcoming Collection For The Legit Boss Shoplist</h3>
   </div>
@@ -38,16 +37,12 @@
      <img src="images/handbag4.jpg" width="200px" height="150px" alt="handbag">
      <img src="images/handbag5.jpg" width="200px" height="150px" alt="handbag">
      <img src="images/handbag6.jpg" width="200px" height="150px" alt="handbag">
-
 </div>
-
  <br>
-
  <nav class="menu">
  <ul>
    <li><a  href="index.php">Back To Top</a></li>
 </ul>
-
      <!--FOOTER-->
      <footer class="site-footer">
 		<div class="container">
@@ -58,4 +53,4 @@
     </footer><!--End of Footer-->
 	
   </body>
-</html>
+  </html>
