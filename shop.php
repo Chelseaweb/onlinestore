@@ -100,10 +100,6 @@ while($array = $result -> fetch_assoc())
 ?>
  <div>
 
-    <div class="add">
-    <button type="submit" name="submit" id="add" class="add">Add To Cart</button>
-    </div>
-
     <label for="quantity">Quantity</label>
     <select id="quantity">
     <option value="1">1</option>
@@ -118,13 +114,17 @@ while($array = $result -> fetch_assoc())
             <img src="<?php echo $image; ?>">
         </div>
         <div>
-            <?php echo $name; ?>
+            <?php echo $name;
+            $product_name = $name;
+             ?>
+
         </div>
 
         <div>
             <?php echo $price; ?>
         </div>
            
+        <div class="btn_div"><button id="a_c_btn" onclick="addToCart('<?php echo $product_name; ?>')">ADD TO CART</button></div>
     </div>
     <?php
 }
@@ -162,21 +162,6 @@ $conn->close();
   </body>
 </html>
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php
   // connect to database
     $db = mysqli_connect('localhost', 'root', 'new_password', 'onlinestore');
@@ -196,7 +181,7 @@ $conn->close();
 			</div>
 		</div>
 	</footer><!--End of Footer-->
-
+<script type="text/javascript" src="script/cart.js"></script>
 </body>
 </html>
 
